@@ -43,8 +43,10 @@ section p {
 }
 
 #experience div, #ipro div {
-	display:grid;
-	grid-template-columns: auto auto;
+	@media only screen and (width >= 700px){
+		display:grid;
+		grid-template-columns: auto auto;
+	}
 	margin-top:-1rem;
 	div {display:revert;}
 }
@@ -55,4 +57,15 @@ img {
 
 figure {
 	margin:auto;
+}
+
+/* Removing paper-like styling when screen gets too narrow */
+@media only screen and (max-width:1000px) {
+	body {
+		margin:0;
+	}
+	main {
+		width:100%;
+		margin:0;
+	}
 }
