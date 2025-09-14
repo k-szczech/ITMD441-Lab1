@@ -1,0 +1,58 @@
+body {
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+	/* Copied from https://www.cssfontstack.com/Arial */
+	background-color: #333;
+}
+
+main {
+	background-color: #EEE;
+	box-sizing: border-box;
+	width:60%;
+	padding:3%;
+	padding-top:1.5%;
+	padding-bottom:1.5%;
+	margin:auto;
+	margin-top:1rem;
+	margin-bottom:1rem;
+}
+
+header {
+	text-align:center;
+	p, section {
+		display:inline;
+		margin:0.35rem;
+	}
+	section :first-child{
+		margin-right:0.4rem;
+	}
+}
+
+footer {
+	text-align:center;
+	margin-top:2rem;
+}
+
+section:not(#contact, #summary, #work, #volunteer, #ipro){
+	border-top: 1px solid black;
+
+}
+
+section p {
+	margin-left:1rem;
+	margin-right:1rem;
+}
+
+#experience div, #ipro div {
+	display:grid;
+	grid-template-columns: auto auto;
+	margin-top:-1rem;
+	div {display:revert;}
+}
+
+img {
+		width:50%;
+}
+
+figure {
+	margin:auto;
+}
